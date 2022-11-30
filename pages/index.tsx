@@ -91,9 +91,9 @@ export default function Home({ donations }: { donations: Array<Record> }) {
           {error && <div>{error}</div>}
           <div className='flex items-center w-full mb-2 border border-blue-300 rounded bg-blue-100 p-6'>
             <span className='mr-2'>
-              <Image src='/beer.svg' width='100' height='100' alt='beer' />
+              <Image src='/beer.svg' width='115' height='115' alt='beer' />
             </span>
-            <span className='mr-2'>X</span>
+            <span className='mr-2 font-semibold text-sm text-gray-500'>X</span>
             {presets.map((preset) => {
               return (
                 <button
@@ -122,7 +122,7 @@ export default function Home({ donations }: { donations: Array<Record> }) {
               Name (Optional)
             </label>
             <input
-              className='shadow rounded w-full border border-gray-200 p-2'
+              className='shadow rounded w-full border border-gray-200 p-2 bg-gray-100 focus:bg-white'
               type='text'
               name='name'
               id='name'
@@ -136,7 +136,7 @@ export default function Home({ donations }: { donations: Array<Record> }) {
               Message (Optional)
             </label>
             <textarea
-              className='shadow rounded w-full border border-gray-200 p-2'
+              className='shadow rounded w-full border border-gray-200 p-2 bg-gray-100 focus:bg-white'
               name='message'
               id='message'
               onChange={(e) => setMessage(e.target.value)}
