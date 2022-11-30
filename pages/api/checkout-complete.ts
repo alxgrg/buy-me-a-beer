@@ -4,7 +4,6 @@ import Stripe from 'stripe';
 import {
   AIRTABLE_API_KEY,
   AIRTABLE_APP_ID,
-  DONATION_IN_CENTS,
   STRIPE_API_KEY,
   STRIPE_WEBHOOK_SECRET,
 } from '../../config';
