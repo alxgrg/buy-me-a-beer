@@ -84,7 +84,7 @@ export default function Home({ donations }: { donations: Array<Record> }) {
             );
           })}
         </div>
-        <div className='border border-gray-200 rounded-lg py-7 px-6'>
+        <div className='border border-gray-200 rounded-lg py-7 px-6 max-w-sm mx-auto mb-8 md:mb-0'>
           <h1 className='text-2xl text-center font-semibold mb-2'>
             Buy me a beer
           </h1>
@@ -108,7 +108,7 @@ export default function Home({ donations }: { donations: Array<Record> }) {
               );
             })}
             <input
-              className='shadow rounded w-full border border-gray-200 p-2'
+              className='shadow rounded border border-gray-200 p-2'
               type='number'
               onChange={(e) => setQuantity(parseFloat(e.target.value))}
               value={quantity}
