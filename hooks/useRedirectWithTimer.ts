@@ -6,7 +6,7 @@ export default function useRedirectWithTimer(url: string, seconds = 5) {
   const router = useRouter();
 
   useEffect(() => {
-    if (delay === 0) router.push('/');
+    if (delay === 0) router.push(url);
 
     const timer = setTimeout(() => {
       setDelay((prevDelay) => prevDelay - 1);
