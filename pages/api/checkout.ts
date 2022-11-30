@@ -40,7 +40,7 @@ export default async function handler(
         },
       ],
       success_url: `${req.headers.origin}/thank-you`,
-      cancel_url: `${req.headers.origin}/cancel`,
+      cancel_url: `${req.headers.origin}/`,
     });
 
     const url = session.url;
